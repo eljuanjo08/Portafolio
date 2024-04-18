@@ -1,0 +1,128 @@
+#tecnologias {
+  width: 80%;
+  margin: 100px auto;
+}
+
+.tecnologias {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 110px;
+}
+
+#tecnologias h2 {
+  font-size: 2.5rem;
+  border-bottom: 5px solid #5252d6;
+  margin-bottom: 40px;
+}
+
+.tec .fa-brands {
+  font-size: 8rem;
+}
+
+.tec {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform .5s ease-in-out;
+}
+
+.tec p {
+  margin-top: 10px;
+  font-size: 2rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.tec:hover {
+  transform: scale(1.2);
+  transition: all .5s ease-in-out;
+}
+
+.html:hover {
+  color: #e44d26;
+}
+
+.css:hover {
+  color: #42a5f5;
+}
+
+.js:hover {
+  color: #efd81d;
+}
+
+.react:hover {
+  color: #1399c4;
+}
+
+.tec:hover .typescript {
+  fill: #1399c4;
+}
+
+.typescript:hover {
+  color: #1399c4;
+}
+
+.py:hover {
+  color: #ffd849;
+}
+
+.tec:hover .python1 {
+  fill: url(#IconifyId18ee47f022646a30e0);
+}
+
+.tec:hover .python2 {
+  fill: url(#IconifyId18ee47f022646a30e1);
+}
+
+.mysql:hover {
+  color: #f29111;
+}
+
+.tec:hover .mysql1 {
+  fill: #00758F;
+}
+
+.tec:hover .mysql2 {
+  fill: #F29111;
+}
+
+.tec:hover .mysql3 {
+  fill: #00758F;
+}
+
+.php:hover {
+  color: #7377ad;
+}
+
+.tec:hover .php {
+  fill: #7377ad;
+}
+
+.cpp:hover {
+  color: #004482;
+}
+
+.tec:hover .cpp1 {
+  fill: #659ad2;
+}
+
+.tec:hover .cpp2 {
+  fill: #00599c;
+}
+
+.tec:hover .cpp3 {
+  fill: #004482;
+}
+
+.tec:hover .cpp4 {
+  fill: #fff;
+}
+
+@media screen and (max-width: 750px) {
+  .tecnologias {
+    gap: 30px;
+  }
+}
