@@ -115,3 +115,14 @@ code {
     font-size: .8rem;
   }
 }
+
+@media screen and (max-width: 600px) {
+  .main-section pre {
+    padding: 5px;
+  }
+
+  code {
+    font-size: .5rem;
+  }
+}
+
