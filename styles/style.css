@@ -81,7 +81,7 @@ footer {
   background-color: #0c0c33;
   width: calc(60% + 3 * 70px + 4rem);
   display: flex;
-  padding: 2rem;
+  padding: 1rem;
   justify-content: space-evenly;
   align-content: center;
   border: 2px solid #5252d6;
@@ -89,6 +89,7 @@ footer {
   box-shadow: 0 10px 25px 0 rgb(0, 0, 0, 0.075);
   margin: auto;
 }
+
 
 .redes {
   display: flex;
@@ -193,23 +194,34 @@ footer {
 
 @media screen and (max-width: 1200px) {
   .red {
-    left: 0;
     width: calc(60% + 3 * 70px + 4rem);
   }
 }
 
 @media screen and (max-width: 750px) {
+  footer {
+    width: 100%;
+    justify-items: center;
+  }
+
   .red {
-    left: 0;
-    width: calc(30% + 3 * 70px + 4rem);
+    width: calc(10% + 3 * 70px + 4rem);
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
   }
 
   .redes {
-    font-size: 0.7rem;
+    font-size: 0.6rem;
+  }
+
+  .redes:hover,
+  .redes:focus {
+    width: 110px;
   }
 
   .redes i {
-    font-size: 0.7rem;
+    font-size: 0.6rem;
   }
 
 }
