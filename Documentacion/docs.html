@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+<link
+href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+rel="stylesheet"
+/>
+<script src="https://kit.fontawesome.com/ea0f736afc.js" crossorigin="anonymous"></script>
+<link
+  href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+  rel="stylesheet">
+    <link rel="stylesheet" href="docs.css">
+    <link rel="stylesheet" href="/styles/dia2.css">
+    <link rel="stylesheet" href="/styles/navbar.css">
+    <title>Lenguaje CSS</title> 
+</head>
+<body>
+  <nav>
+    <div class="mobile">
+        <div class="header">
+            <div class="logo">
+                <a href="/"><i class="fa-brands fa-github"></i> Mi Portafolio</a>
+            </div>
+            <div class="more">
+                <button id="bMore">
+                    <div class="menu-icon">
+                        <div class="line-1 no-animation"></div>
+                        <div class="line-2 no-animation"></div>
+                        <div class="line-3 no-animation"></div>
+                    </div>
+                </button>
+            </div>
+        </div>
+        <div class="links collapsed" id="links">
+            <a href="/#sobre_mi">Sobre Mí</a>
+            <a href="/#tecnologias">Tecnologías</a>
+            <a href="/#proyectos">Proyectos</a>
+            <a href="/#contacto">Contacto</a>
+        </div>
+    </div>
+    <div class="desktop">
+        <div class="logo">
+            <a href="/"><i class="fa-brands fa-github"></i> Mi Portafolio</a>
+        </div>
+        <div class="primary">
+            <a href="/#sobre_mi">Sobre Mí</a>
+            <a href="/#tecnologias">Tecnologías</a>
+            <a href="/#proyectos">Proyectos</a>
+            <a href="/#contacto">Contacto</a>
+        </div>
+    </div>
+    </div>
+</nav>
+    <nav id="navbar">
+        <header>Documentación Básica de CSS</header>
+        <a href="#¿Que_es_CSS?" class="nav-link">¿Que es CSS?</a>
+        <a href="#Sintaxis_de_CSS" class="nav-link">Sintaxis de CSS</a>
+        <a href="#Selectores_de_CSS" class="nav-link">Selectores de CSS</a>
+        <a href="#Comentarios_en_CSS" class="nav-link">Comentarios en CSS</a>
+        <a href="#Colores_en_CSS" class="nav-link">Colores en CSS</a>
+        <a href="#Aprender_mas" class="nav-link">Aprender mas</a>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="¿Que_es_CSS?">
+          <header>¿Que es CSS?</header>
+          <p>CSS significa hojas de estilo en cascada. CSS describe cómo se deben mostrar los elementos HTML en la pantalla, el papel o en otros medios. CSS ahorra mucho trabajo. Puede controlar el diseño de varias páginas web a la vez. Las hojas de estilo externas se almacenan en archivos CSS</p>
+        </section>
+        <section class="main-section" id="Sintaxis_de_CSS">
+          <header>Sintaxis de CSS</header>
+          <pre class="no-center"><code> 
+  Selector            Declaración
+    h1     {color:      blue; font-size: 12px;}
+            Propiedad   Valor              
+            </code></pre>
+          <p>
+            El selector apunta al elemento HTML que desea diseñar. El bloque de declaración contiene una o más declaraciones separadas por punto y coma.<br><br>
+            Cada declaración incluye un nombre de propiedad CSS y un valor, separados por dos puntos. Varias declaraciones CSS se separan con punto y coma, y los bloques de declaración están rodeados por llaves.<br></br>
+  
+            Aquí está un ejemplo:
+          <pre class="no-center"><code>
+  p {
+      color: red;
+      text-align: center;
+  }
+            </code></pre>
+            <ul>
+              <li>p es un selector en CSS (apunta al elemento HTML que desea diseñar: <span><<span>p<span>><span>).</li>
+              <li>colores una propiedad, y red es el valor de la propiedad</li>
+              <li>text-align es una propiedad, y center es el valor de la propiedad</li>            
+            </ul>
+          </p>
+        </section>
+        <section class="main-section" id="Selectores_de_CSS">
+          <header>Selectores de CSS</header>
+          <p>
+            Los selectores de CSS se utilizan para "encontrar" (o seleccionar) los elementos HTML que desea diseñar.<br><br>
+            <ul>
+              <li>Selector de Elementos</li>
+              <p>El selector de elementos selecciona elementos HTML en función del nombre del elemento.
+                <pre class="no-center"><code>
+  p {
+      text-align: center;
+      color: red;
+  }
+                </code></pre>
+              </p>
+              <li>Selector de id(#)</li>
+              <p>
+                El selector id utiliza el atributo id de un elemento HTML para seleccionar un elemento específico.<br><br>
+                El id de un elemento es único dentro de una página, por lo que el selector de id es acostumbrado ¡Seleccione un elemento único! <br><br>
+                Para seleccionar un elemento con un identificador específico, escriba un carácter hash (#), seguido de Identificador del elemento.
+                <pre class="no-center"><code>
+ #para1 {
+     text-align: center;
+     color: red;
+ }
+                </code></pre>
+              </p>
+              <li>Selector de clases(.)</li>
+              <p>
+                El selector de clases selecciona elementos HTML con un atributo de clase específico. <br><br>
+                Para seleccionar elementos con una clase específica, escriba un carácter de punto (.), seguido del Nombre de clase.
+                <pre class="no-center"><code>
+  .center {
+      text-align: center;
+      color: red;
+  }
+                </code></pre>
+              </p>
+              <li>Selector universal(*)</li>     
+              <p>
+                El selector universal (*) selecciona todo el HTML en la página.
+                <pre class="no-center"><code>
+  * {
+      text-align: center;
+      color: blue;
+  }
+                </code></pre>
+              </p>      
+            </ul>
+
+          </p>
+        </section>
+        <section class="main-section" id="Comentarios_en_CSS">
+            <header>Comentarios en CSS</header>
+            <p>Los comentarios se utilizan para explicar el código y pueden ayudar cuando se edita el código fuente en una fecha posterior. <br><br>
+                Los navegadores ignoran los comentarios. <br>
+                Un comentario CSS se coloca dentro del elemento, y comienza con y termina con: /**/
+            <pre><code> /* Esto es una linea de comentario */</code></pre>
+            </p>
+        </section>
+        <section class="main-section" id="Colores_en_CSS">
+            <header>Colores en CSS</header>
+            <p>Los colores se especifican utilizando nombres de color predefinidos o valores RGB, HEX, HSL, RGBA, HSLA.
+                <ul>
+                    <li>Colores RGB</li>
+                    <p>En CSS, un color se puede especificar como un valor RGB, usando esta fórmula: <br><br>
+                        <pre><code>rgb(rojo, verde, azul)</code></pre> <br><br>
+                        Cada parámetro (rojo, verde y azul) define la intensidad del color entre 0 y 255. <br><br>
+                        Por ejemplo, rgb(255, 0, 0) se muestra en rojo, porque el rojo se establece en su valor más alto (255) y los otros son establecer en 0.<br><br>
+                        Para mostrar negro, establezca todos los parámetros de color en 0, así: <pre><code>rgb(0, 0, 0)</code></pre>.<br><br>
+                        Para mostrar blanco, establezca todos los parámetros de color en 255, como Esto:     <pre><code>RGB(255, 255, 255)</code></pre></p>
+                    <li>Colores HEX</li>
+                    <p>
+                        En CSS, se puede especificar un color usando un valor hexadecimal en la forma: <br><br>
+                        <pre><code>#RRGGBB</code></pre>
+                        Donde rr (rojo), gg (verde) y bb (azul) son valores hexadecimales entre 00 y ff (igual que el decimal 0-255). <br><br>
+                        Por ejemplo, #ff0000 se muestra como rojo, porque el rojo se establece en su valor más alto (ff) y los demás se establecen en el valor más bajo (00).
+                        Para mostrar negro, establezca todos los valores en 00, así: <pre><code>#000000</code></pre>
+                        Para mostrar blanco, establezca todos los valores en ff, como Esto: <pre><code>#ffffff</code></pre>
+                    </p>
+                    <li>Colores HSL</li>
+                    <p>
+                        En CSS, se puede especificar un color usando tono, saturación y luminosidad (HSL) en El formulario: <br><br>
+                        <pre><code>HSL (tono, saturación, luminosidad)</code></pre>
+                        El tono es un grado en la rueda de color de 0 a 360. 0 es rojo, 120 es verde y 240 es azul. <br><br>
+                        La saturación es un valor porcentual. 0% significa un tono de gris, y 100% es el color completo. <br> <br>
+                        La ligereza también es un porcentaje. 0% es negro, 50% no es claro ni oscuro, 100% es blanco
+                    </p>
+                </ul>
+            </p>
+        </section>
+        <section class="main-section" id="Aprender_mas">
+          <header>Aprender mas</header>
+          <p>Puedes seguir aprendiendo sobre CSS en <a href="https://www.w3schools.com/css">W3schools</a></p>
+        </section>     
+      </main>
+</body>
+</html>

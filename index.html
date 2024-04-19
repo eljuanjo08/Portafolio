@@ -10,9 +10,11 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="./styles/dia2.css">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/navbar.css">
     <link rel="stylesheet" href="./styles/tecnologias.css">
+    <link rel="stylesheet" href="./styles/proyecto.css">
     <title>Portafolio - Juan José Urquía Rodríguez</title>
 </head>
 
@@ -21,33 +23,34 @@
         <div class="mobile">
             <div class="header">
                 <div class="logo">
-                    <a href="index.html"><i class="fa-brands fa-github"></i> Mi Portafolio</a>
+                    <a href="/"><i class="fa-brands fa-github"></i> Mi Portafolio</a>
                 </div>
                 <div class="more">
                     <button id="bMore">
-                        <span class="material-symbols-outlined">
-                            <i class="fa-solid fa-bars" id="iconExpanded"></i> 
-                            <i class="fa-solid fa-x" id="iconCollapsed"></i>
-                        </span>
+                        <div class="menu-icon">
+                            <div class="line-1 no-animation"></div>
+                            <div class="line-2 no-animation"></div>
+                            <div class="line-3 no-animation"></div>
+                        </div>
                     </button>
                 </div>
             </div>
             <div class="links collapsed" id="links">
-                <a href="#sobre_mi">Sobre Mí</a>
-                <a href="#tecnologias">Tecnologías</a>
-                <a href="#">Proyectos</a>
-                <a href="#">Contacto</a>
+                <a href="/#sobre_mi">Sobre Mí</a>
+                <a href="/#tecnologias">Tecnologías</a>
+                <a href="/#proyectos">Proyectos</a>
+                <a href="/#contacto">Contacto</a>
             </div>
         </div>
         <div class="desktop">
             <div class="logo">
-                <a href="index.html"><i class="fa-brands fa-github"></i> Mi Portafolio</a>
+                <a href="/"><i class="fa-brands fa-github"></i> Mi Portafolio</a>
             </div>
             <div class="primary">
-                <a href="#sobre_mi">Sobre Mí</a>
-                <a href="#tecnologias">Tecnologías</a>
-                <a href="#">Proyectos</a>
-                <a href="#">Contacto</a>
+                <a href="/#sobre_mi">Sobre Mí</a>
+                <a href="/#tecnologias">Tecnologías</a>
+                <a href="/#proyectos">Proyectos</a>
+                <a href="/#contacto">Contacto</a>
             </div>
         </div>
         </div>
@@ -100,7 +103,61 @@
             </div>
         </div>
     </section>
+    <section id="proyectos">
+        <h2>Proyectos</h2>
+        <div class="proyectos">
+            <div class="proyecto">
+                <img class="proyecto-img" src="./sources/barra.png" alt="Imagen de Proyecto de barra de busqueda">
+                <h3>Barra de Búsqueda.</h3>
+                <a class="proyecto-a" href="/barra de busqueda/barra.html">Ir al Proyecto</a>
+            </div>
+            <div class="proyecto">
+                <img class="proyecto-img" src="./sources/Calculadora.png" alt="Imagen de Proyecto de calculadora">
+                <h3>Calculadora</h3>
+                <a class="proyecto-a" href="/calculadora/calculadora.html">Ir al Proyecto</a>
+            </div>
+            <div class="proyecto">
+                <img class="proyecto-img" src="./sources/Docs.png" alt="Imagen de Proyecto de Documentación">
+                <h3>Documentación</h3>
+                <a class="proyecto-a" href="/Documentacion/docs.html">Ir al Proyecto</a>
+            </div>
+            <div class="proyecto">
+                <img class="proyecto-img" src="./sources/Login.png" alt="Imagen de Proyecto de Login">
+                <h3>Login</h3>
+                <a class="proyecto-a" href="./Login/login.html">Ir al Proyecto</a>
+            </div>
+            <div class="proyecto">
+                <img class="proyecto-img" src="./sources/Tributo.png" alt="Imagen de Proyecto de Pagina Tributo">
+                <h3>Página Tributo</h3>
+                <a class="proyecto-a" href="./Tributo/tributo.html">Ir al Proyecto</a>
+            </div>
+        </div>
+    </section>
+    <footer id="contacto">
+        <h2>Contacto</h2>
+        <div class="red">
+            <a href="https://www.facebook.com/juanjose.urquia.58" class="redes facebook">
+                <i class="fa-brands fa-facebook"></i>
+                <span class="link-title">facebook</span>
+            </a>
+            <a href="https://www.linkedin.com/in/juan-jos%C3%A9-urqu%C3%ADa-7a1204261/" class="redes linkedin">
+                <i class="fa-brands fa-linkedin"></i>
+                <span class="link-title">Linkedin</span>
+            </a>
+            <a href="https://twitter.com/Eljuanjo_08" class="redes twitter">
+                <i class="fa-brands fa-x-twitter"></i>
+                <span class="link-title">Twitter</span>
+            </a>
+            <a href="https://www.instagram.com/eljuanjo0806/" class="redes instagram">
+                <i class="fa-brands fa-instagram"></i>
+                <span class="link-title">Instagram</span>
+            </a>
+            <a href="https://github.com/eljuanjo08/" class="redes github">
+                <i class="fa-brands fa-github"></i>
+                <span class="link-title">Github</span>
+            </a>
+        </div>
+    </footer>
     <script src="./scripts/script.js"></script>
 </body>
-
 </html>
