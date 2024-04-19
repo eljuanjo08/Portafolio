@@ -37,7 +37,7 @@ html, body {
 }
 
 code {
-  
+  width: min-content;
   color: #777777;
 }
 
@@ -104,4 +104,14 @@ code {
   padding: 20px;
   margin-bottom: 0
 }
+}
+
+@media screen and (max-width: 900px) {
+  .main-section pre {
+    padding: 5px;
+  }
+
+  code {
+    font-size: .5rem;
+  }
 }

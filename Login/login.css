@@ -7,7 +7,7 @@ body {
     justify-content: center;
     height: 100vh;
     background-color: rgb(158, 73, 238);
-    margin-top: 100px;
+    margin-top: 30px;
 }
 
 
@@ -155,8 +155,7 @@ hr {
 @media screen and (max-width: 1375px) {
     .form-container {
         width: 95%;
-        height: max-content;
-        margin-bottom: 30px;
+        height: min-content;
     }
 
     .form-container .login-container {
@@ -171,9 +170,8 @@ hr {
 
 @media screen and (max-width: 900px) {
     .form-container {
-        height: 85%;
-        height: max-content;  
-        margin-bottom: 30px;  
+        height: min-content;
+        padding: 10px;  
     }
 
     .form-container .login-container {
