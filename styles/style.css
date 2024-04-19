@@ -79,7 +79,6 @@ footer {
 }
 
 .red {
-  position: relative;
   background-color: #0c0c33;
   width: calc(60% + 3 * 70px + 4rem);
   display: flex;
@@ -89,7 +88,7 @@ footer {
   border: 2px solid #5252d6;
   border-radius: 20px 20px;
   box-shadow: 0 10px 25px 0 rgb(0, 0, 0, 0.075);
-  left: 10%;
+  margin: auto;
 }
 
 .redes {
