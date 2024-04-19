@@ -192,3 +192,61 @@ footer {
 .github:hover i {
   color: #000;
 }
+
+@media screen and (max-width: 1200px) {
+  .red {
+    left: 0;
+    width: calc(60% + 3 * 70px + 4rem);
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .red {
+    left: 0;
+    width: calc(35% + 3 * 70px + 4rem);
+  }
+
+  .redes {
+    font-size: 0.7rem;
+  }
+
+  .redes i {
+    font-size: 0.7rem;
+  }
+
+  #bMore {
+    height: 100%;
+  }
+  nav .desktop {
+    display: none;
+  }
+
+  nav .mobile {
+    display: block;
+  }
+
+  .links a {
+    position: relative;
+    display: block;
+    top: 15px;
+    width: 92%;
+    background-color: #1a1a42;
+    margin: 0;
+    transition: width 0.3s ease-in-out;
+  }
+
+  .links a:nth-child(1) {
+    border-radius: 10px 10px 0 0;
+  }
+
+  .links a:last-child {
+    border-radius: 0 0 10px 10px;
+  }
+
+  nav a:hover {
+    color: #5252d6;
+    border-radius: 0;
+    border-bottom: 2px solid #5252d6;
+    animation: none;
+  }
+}
